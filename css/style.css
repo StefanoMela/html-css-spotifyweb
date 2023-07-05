@@ -226,6 +226,15 @@ HEADER
     cursor: pointer;
 }
 
+/* 
+.content {
+
+    width: calc(100% - 250px);
+    height: 100%;
+    margin: 0 auto;
+
+}  */
+
 .content {
 
     position: absolute;
@@ -234,3 +243,29 @@ HEADER
     left: 0;
 
 }
+/* 
+.album__row {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.album__col {
+
+
+}
+
+.album__card {
+
+    width: calc((100% - 250px) / 6);
+
+}
+
+
+.debug {
+
+    border: 1px solid red;
+    height: 300px;
+} */
