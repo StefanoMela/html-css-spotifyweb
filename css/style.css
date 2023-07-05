@@ -72,16 +72,16 @@ img {
     top: 0;
     overflow: auto;
     background-color: var(--clr--tertiary);
-    opacity: .3;
     color: var(--clr--text);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 100px;
 }
 
 
 .sidenav {
-    width: 300px;
+    width: 250px;
     position: fixed;
     top: 100px;
     height: calc(100% - 200px);
@@ -114,6 +114,7 @@ img {
 .header__logo {
     height: 100px;
     width: 100px;
+    margin-left: 1rem;
 }
 
 .header__button {
@@ -123,6 +124,8 @@ img {
     border-radius: 30px;
     background-color: transparent;
     text-transform: uppercase;
+    margin-right: 1rem;
+    padding: 1rem 2rem;
 }
 
 
