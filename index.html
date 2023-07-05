@@ -17,22 +17,22 @@
     <main class="wrapper">
         <!-- HEADER -->
         <header class="header">
-            <img class="header__logo" src="./img/logo.svg" alt="">
             <button class="header__button">Effettua l'upgrade</button>
         </header>
         <!-- SIDEBAR -->
-        <nav class="sidenav">
-            <div class="sidenav__items">
-                <i class="sidenav__icon fa-solid fa-house"></i>
-                <span class="sidenav__text">Home</span>
+        <nav class="sidebar">
+            <img class="sidebar__logo" src="./img/logo.svg" alt="">
+            <div class="sidebar__items">
+                <i class="sidebar__icon fa-solid fa-house"></i>
+                <span class="sidebar__text">Home</span>
             </div>
-            <div class="sidenav__items">
-                <i class="sidenav__icon fa-solid fa-search"></i>
-                <span class="sidenav__text">Cerca</span>
+            <div class="sidebar__items">
+                <i class="sidebar__icon fa-solid fa-search"></i>
+                <span class="sidebar__text">Cerca</span>
             </div>
-            <div class="sidenav__items">
+            <div class="sidebar__items">
                 <i class="fa-solid fa-record-vinyl"></i>
-                <span class="sidenav__text">Libreria</span>
+                <span class="sidebar__text">La tua libreria</span>
             </div>
         <!-- PLAYLIST ITEMS -->
             <div class="playlist__items">
@@ -50,14 +50,20 @@
                 <span class="playlist__name">Nome Playlist</span>
             </div>
         </nav>
-        <section class="main">
-            <div class="debug">
-            </div>
-            <div class="debug">
+        <section class="content">
+            <div class="main__menu">
+                <ul class="main__menu__items">
+                    <li class="main__menu__item"><a href="">in evidenza</a></li>
+                    <li class="main__menu__item"><a href="">podcast</a></li>
+                    <li class="main__menu__item"><a href="">classifiche</a></li>
+                    <li class="main__menu__item"><a href="">generi e mood</a></li>
+                    <li class="main__menu__item"><a href="">nuove uscite</a></li>
+                    <li class="main__menu__item"><a href="">scopri</a></li>
+                </ul>
             </div>
         </section>
+        <footer class="footer"></footer>
     </main>
-    <footer class="footer"></footer>
 </body>
 
 </html>
