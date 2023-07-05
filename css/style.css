@@ -209,6 +209,7 @@ HEADER
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main__menu__item {
