@@ -368,7 +368,7 @@ figcaption {
 */
 
 
-.footer__current__song {
+.current__song {
 
     display: flex;
     justify-content: center;
@@ -377,12 +377,12 @@ figcaption {
     cursor: pointer;
 }
 
-.now__playing__img {
+.current__song__img>img {
 
     max-width: 75px;
 }
 
-.footer__player {
+.song__player {
 
     display: flex;
     flex-direction: column;
@@ -392,7 +392,73 @@ figcaption {
     cursor: pointer;
 }
 
-.footer__volume__bar {
+
+.song__player__icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 50%;
+    padding-bottom: 1rem;
+
+}
+
+.song__player__bar {
+
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.song__player__bar--container {
+
+    flex-grow: 1;
+}
+
+.song__bar__total__progress {
+
+    display: block;
+    width: 350px;
+    height: 5px;
+    background-color: var(--clr--subtext);
+    border-radius: 10px;
+    
+}
+
+.live__progress__bar {
+
+    display: block;
+    width: 30%;
+    height: 5px;
+    background-color: var(--clr--text);
+    border-radius: 10px;
+    position: relative;
+}
+
+.live__progress__bar:hover {
+
+    background-color: var(--clr--accent);
+}
+
+.progress__circle {
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr--text);
+    border-radius: 10px;
+
+    /* display: none; */
+}
+
+.volume__controller {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -148,28 +148,52 @@
     </main>
     <!-- FOOTER -->
     <footer id="footer">
-        <div class="footer__current__song">
-            <img src="./img/sinister.jpeg" class="now__playing__img" alt="">
-            <i class="fa-solid fa-record-vinyl"></i>
-            <i class="fa-solid fa-record-vinyl"></i>
-        </div>
-        <div class="footer__player">
-            <div class="footer__player__icons">
-                <i class="fa-solid fa-record-vinyl"></i>
-                <i class="fa-solid fa-record-vinyl"></i>
-                <i class="fa-solid fa-record-vinyl"></i>
-                <i class="fa-solid fa-record-vinyl"></i>
+        <div class="current__song">
+            <div class="current__song__img">
+                <img src="./img/sinister.jpeg" alt="">
             </div>
-            <div class="footer__player__bar">
-                <span>assasjasjaja</span>
-                <span>ahahahahahaa</span>
+            <div class="current__song__name">
+                <h5>Sinister</h5>
+                <h6 class="subtext">Nome brano</h6>
+            </div>
+            <div class="current__song__icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
             </div>
         </div>
-        <div class="footer__volume__bar">
-            <i class="fa-solid fa-record-vinyl"></i>
-            <i class="fa-solid fa-record-vinyl"></i>
-            <span>aasjaja</span>
-            <span>ahahahaa</span>
+        <div class="song__player">
+            <div class="song__player__icons">
+                <i class="fa-solid fa-random"></i>
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-play-circle fa-2xl"></i>
+                <i class="fa-solid fa-forward"></i>
+                <i class="fa-solid fa-redo"></i>
+            </div>
+            <div class="song__player__bar">
+                <div>0:24</div>
+                <div class="song__player__bar--container">
+                    <span class="song__bar__total__progress">
+                        <span class="live__progress__bar">
+                            <span class="progress__circle"></span>
+                        </span>
+                    </span>
+                </div>
+                <div>3:32</div>
+            </div>
+        </div>
+        <div class="volume__controller">
+            <div class="volume__icons">
+                <i class="fa-solid fa-sliders"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-up"></i>
+            </div>
+            <div class="song__player__bar--container">
+                <span class="song__bar__total__progress">
+                    <span class="live__progress__bar">
+                        <span class="progress__circle"></span>
+                    </span>
+                </span>
+            </div>
         </div>
     </footer>
 </body>
