@@ -108,7 +108,9 @@ ul a {
 .footer {
     height: 10vh;
     color: var(--clr--text);
-    background-color: var(--clr--tertiary)
+    background-color: var(--clr--tertiary);
+    display: flex;
+    justify-content: space-between;
 }
 
 /* 
@@ -231,7 +233,7 @@ HEADER
 .content {
 
     width: calc(100% - 250px);
-    height: 100%;
+    height: calc(100% - 10vh);
     margin: 0 auto;
 
 }  */
