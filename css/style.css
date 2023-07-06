@@ -230,14 +230,13 @@ HEADER
     flex-direction: column;
     gap: 1rem;
     color: var(--clr--subtext);
-
+    cursor: pointer;
 }
 
 .playlist__name:hover,
 .playlist__add:hover {
 
     color: var(--clr--accent);
-    cursor: pointer;
 }
 
 .playlist__title {
@@ -276,6 +275,7 @@ HEADER
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .main__menu__item {
@@ -300,16 +300,15 @@ HEADER
     flex-wrap: wrap;
     gap: 1rem;
     margin: 2rem 0;
-}
-
-
-#content .album__row {
-
     text-align: center;
     color: var(--clr--text);
     padding: .5rem 0;
 }
 
+.album__card {
+
+    cursor: pointer;
+}
 
 .suggestion__subtitle {
 
@@ -324,6 +323,11 @@ HEADER
     gap: 1.5rem;
 }
 
+.created__img {
+
+    cursor: pointer;
+}
+
 figcaption {
 
     padding: 1rem 0;
@@ -335,6 +339,7 @@ figcaption {
 
     color: var(--clr--subtext);
     text-align: center;
+    padding: .5rem 0;
 
 }
 
@@ -347,11 +352,12 @@ figcaption {
 }
 
 
-.most__popular__col img{
+.most__popular__img{
 
     border-radius: 50%;
     overflow: hidden;
     object-fit: cover;
+    cursor: pointer;
 }
 
 
@@ -368,6 +374,7 @@ figcaption {
     justify-content: center;
     align-items: center;
     gap: .6rem;
+    cursor: pointer;
 }
 
 .now__playing__img {
@@ -382,6 +389,7 @@ figcaption {
     align-items: center;
     justify-content: center;
     gap: .6rem;
+    cursor: pointer;
 }
 
 .footer__volume__bar {
@@ -389,4 +397,33 @@ figcaption {
     align-items: center;
     justify-content: center;
     gap: .6rem;
+    cursor: pointer;
+}
+
+
+
+/* 
+*********************
+
+        HOVER        
+
+*********************
+*/
+
+
+.album__card:hover {
+
+    opacity: .5;
+}
+
+
+.created__img:hover {
+
+    opacity: .5;
+}
+
+
+.most__popular__img:hover {
+
+    opacity: .5;
 }
