@@ -153,13 +153,6 @@ HEADER
 }
 
 
-.header__button:hover {
-
-    background-color: var(--clr--text);
-    color: hsl(141, 75%, 51%);
-    cursor: pointer;
-}
-
 /*
     SIDEBAR
 */
@@ -169,14 +162,6 @@ HEADER
     height: 100px;
     width: 100px;
     cursor: pointer;
-}
-
-
-.sidebar__items:hover {
-
-    color: var(--clr--accent);
-    cursor: pointer;
-
 }
 
 .download__button {
@@ -194,14 +179,6 @@ HEADER
     padding-right: .5rem;
 }
 
-.download__button:hover,
-.button__icon:hover {
-
-    color: var(--clr--accent);
-}
-
-
-
 .account__info {
 
     display: flex;
@@ -210,11 +187,6 @@ HEADER
     padding: .5rem 0;
     border-top: 1px solid var(--clr--subtext);
     width: 90%;
-}
-
-.account__info:hover {
-
-    color: var(--clr--text);
 }
 
 /* 
@@ -231,12 +203,6 @@ HEADER
     gap: 1rem;
     color: var(--clr--subtext);
     cursor: pointer;
-}
-
-.playlist__name:hover,
-.playlist__add:hover {
-
-    color: var(--clr--accent);
 }
 
 .playlist__title {
@@ -286,12 +252,6 @@ HEADER
     font-weight: bolder;
 }
 
-.main__menu__item:hover {
-
-    border-bottom: 1px solid var(--clr--accent);
-    padding-bottom: .3rem;
-    cursor: pointer;
-}
 
 .album__row {
 
@@ -413,12 +373,12 @@ figcaption {
     gap: 1rem;
 }
 
-.song__player__bar--container {
+.progress__bar--container {
 
     flex-grow: 1;
 }
 
-.song__bar__total__progress {
+.progress__bar__total__progress {
 
     display: block;
     width: 350px;
@@ -438,32 +398,27 @@ figcaption {
     position: relative;
 }
 
-.live__progress__bar:hover {
-
-    background-color: var(--clr--accent);
-}
-
-.progress__circle {
-
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-
-    width: 15px;
-    height: 15px;
-    background-color: var(--clr--text);
-    border-radius: 10px;
-
-    /* display: none; */
-}
-
 .volume__controller {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .6rem;
     cursor: pointer;
+}
+
+.volume__icons {
+
+    padding: 0 1rem;
+}
+
+.fa-desktop {
+
+    padding-inline: 1rem;
+}
+
+.progress__bar__total__progress.small {
+
+    width: 100px;
 }
 
 
@@ -475,6 +430,51 @@ figcaption {
 
 *********************
 */
+
+
+
+.header__button:hover {
+
+    background-color: var(--clr--text);
+    color: hsl(141, 75%, 51%);
+    cursor: pointer;
+}
+
+
+.sidebar__items:hover {
+
+    color: var(--clr--accent);
+    cursor: pointer;
+
+}
+
+
+.download__button:hover,
+.button__icon:hover {
+
+    color: var(--clr--accent);
+}
+
+
+.account__info:hover {
+
+    color: var(--clr--text);
+}
+
+
+.playlist__name:hover,
+.playlist__add:hover {
+
+    color: var(--clr--accent);
+}
+
+
+.main__menu__item:hover {
+
+    border-bottom: 1px solid var(--clr--accent);
+    padding-bottom: .3rem;
+    cursor: pointer;
+}
 
 
 .album__card:hover {
@@ -492,4 +492,25 @@ figcaption {
 .most__popular__img:hover {
 
     opacity: .5;
+}
+
+.live__progress__bar:hover {
+
+    background-color: var(--clr--accent);
+}
+
+
+.live__progress__bar:hover>.progress__circle {
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr--text);
+    border-radius: 10px;
+
+    display: block;
 }
