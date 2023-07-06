@@ -11,7 +11,7 @@
     --clr--text: hsl(0, 0%, 100%);
     --clr--subtext: hsl(223, 3%, 51%);
     --clr--icons: hsl(0, 0%, 82%);
-    --clr--accent: hsl(84, 100%, 59%);
+    --clr--accent: hsl(141, 75%, 51%);
 
     --ff--base: 'Merriweather', serif;
     
@@ -103,6 +103,7 @@ ul a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    justify-content: space-evenly;
     padding-left: 1rem;
     overflow: auto;
 }
@@ -173,10 +174,54 @@ HEADER
 
 .sidebar__items:hover {
 
-    color: hsl(141, 75%, 51%);
+    color: var(--clr--accent);
     cursor: pointer;
 
 }
+
+.download__button {
+
+    border: none;
+    background-color: transparent;
+    color: var(--clr--subtext);
+    text-align: left;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.button__icon {
+
+    padding-right: .5rem;
+}
+
+.download__button:hover,
+.button__icon:hover {
+
+    color: var(--clr--accent);
+}
+
+
+
+.account__info {
+
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: .5rem 0;
+    border-top: 1px solid var(--clr--subtext);
+    width: 90%;
+}
+
+.account__info:hover {
+
+    color: var(--clr--text);
+}
+
+/* 
+**********************
+    PLAYLIST ITEMS    
+**********************
+*/
 
 
 .playlist__items {
@@ -185,14 +230,13 @@ HEADER
     flex-direction: column;
     gap: 1rem;
     color: var(--clr--subtext);
-    margin: 2rem 0;
 
 }
 
 .playlist__name:hover,
 .playlist__add:hover {
 
-    color: hsl(141, 75%, 51%);
+    color: var(--clr--accent);
     cursor: pointer;
 }
 
