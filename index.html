@@ -16,12 +16,12 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header">
+    <header id="header">
         <button class="header__button">Effettua l'upgrade</button>
     </header>
-    <main class="wrapper">
+    <main id="wrapper">
         <!-- SIDEBAR -->
-        <nav class="sidebar">
+        <nav id="sidebar">
             <img class="sidebar__logo" src="./img/logo.svg" alt="">
             <div class="sidebar__items">
                 <i class="sidebar__icon fa-solid fa-house"></i>
@@ -51,7 +51,7 @@
                 <span class="playlist__name">Nome Playlist</span>
             </div>
         </nav>
-        <section class="content">
+        <section id="content">
             <div class="main__menu">
                 <ul class="main__menu__items">
                     <li class="main__menu__item"><a href="">in evidenza</a></li>
@@ -84,11 +84,29 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer">
         <div class="footer__current__song">
-            <img src="./img/sinister.jpeg" alt="">
+            <img src="./img/sinister.jpeg" class="now__playing__img" alt="">
             <i class="fa-solid fa-record-vinyl"></i>
             <i class="fa-solid fa-record-vinyl"></i>
+        </div>
+        <div class="footer__player">
+            <div class="footer__player__icons">
+                <i class="fa-solid fa-record-vinyl"></i>
+                <i class="fa-solid fa-record-vinyl"></i>
+                <i class="fa-solid fa-record-vinyl"></i>
+                <i class="fa-solid fa-record-vinyl"></i>
+            </div>
+            <div class="footer__player__bar">
+                <span>assasjasjaja</span>
+                <span>ahahahahahaa</span>
+            </div>
+        </div>
+        <div class="footer__volume__bar">
+            <i class="fa-solid fa-record-vinyl"></i>
+            <i class="fa-solid fa-record-vinyl"></i>
+            <span>aasjaja</span>
+            <span>ahahahaa</span>
         </div>
     </footer>
 </body>

@@ -73,7 +73,7 @@ ul a {
 ***************
 */
 
-.wrapper {
+#wrapper {
 
     margin-inline: auto;
     height: calc(100vh - 100px);
@@ -81,7 +81,7 @@ ul a {
 }
 
 
-.header {
+#header {
     background-color: var(--clr--tertiary);
     color: var(--clr--text);
     display: flex;
@@ -94,7 +94,7 @@ ul a {
 }
 
 
-.sidebar {
+#sidebar {
     height: 100%;
     width: 250px;
     background-color: var(--clr--secondary);
@@ -106,7 +106,7 @@ ul a {
 }
 
 
-.content {
+#content {
 
     width: calc(100% - 250px);
     height: calc(100% - 10vh);
@@ -117,13 +117,14 @@ ul a {
 
 
 
-.footer {
+#footer {
     height: 100px;
     color: var(--clr--text);
     background-color: var(--clr--tertiary);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 }
 
 /* 
@@ -241,8 +242,8 @@ HEADER
     padding-bottom: .3rem;
     cursor: pointer;
 }
-
 /* 
+
 .album__row {
 
     display: flex;
@@ -268,7 +269,7 @@ HEADER
     border: 1px solid red;
     height: 300px;
 } */
-
+ 
 
 
 /* 
@@ -281,9 +282,19 @@ HEADER
 .footer__current__song {
 
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer__current__song img {
+.now__playing__img {
 
-    max-width: 100px;
+    max-width: 75px;
+}
+
+.footer__player {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
