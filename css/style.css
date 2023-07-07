@@ -102,7 +102,6 @@ ul a {
     color: var(--clr--subtext);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     justify-content: space-evenly;
     padding-left: 1rem;
 }
@@ -273,6 +272,7 @@ HEADER
 .album__card {
 
     cursor: pointer;
+    max-width: 200px;
 }
 
 .suggestion__subtitle {
