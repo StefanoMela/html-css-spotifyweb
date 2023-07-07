@@ -566,7 +566,14 @@ figcaption {
 */
 
 
-@media screen and (max-width: 639px) {
+
+@media screen and (max-width: 380px) {
+
+
+    h2,h3,h4 {
+
+        padding: .1rem;
+    }
 
     #header {
 
@@ -618,12 +625,12 @@ figcaption {
 
         display: none;
     }
- 
+
     #sidebar>.download__info,
     #sidebar>.account__info {
 
         display: block;
-       
+
     }
 
     #sidebar>.download__info>button,
@@ -646,13 +653,15 @@ figcaption {
 
     }
 
-    .album__row {
+    .album__col,
+    .user__suggestions__col,
+    .most__popular__col {
 
-        justify-content: space-evenly;
-        margin: 0;
+
+    width: calc(100% / 1);
+    padding: .5rem;
     }
-
-
+    
     .main__menu__item {
 
         padding: .5rem .8rem;
@@ -676,5 +685,125 @@ figcaption {
     }
 
 
+}
 
+@media screen and (max-width: 639px) {
+
+
+
+    h2,h3,h4 {
+
+        padding: .1rem;
+    }
+
+    #header {
+
+        width: calc(100% - 50px);
+        height: 70px;
+        padding: 1rem 0;
+    }
+
+    .header__button {
+
+        letter-spacing: 0;
+        padding: .5rem 1rem;
+        font-size: .7rem;
+    }
+
+
+    #sidebar {
+
+        width: 50px;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #sidebar>* {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    #sidebar>.sidebar__logo__small {
+
+        display: block;
+        max-width: 1.5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    #sidebar>.sidebar__items {
+
+        display: block;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .sidebar__items>span {
+
+        display: none;
+    }
+
+    #sidebar>.download__info,
+    #sidebar>.account__info {
+
+        display: block;
+
+    }
+
+    #sidebar>.download__info>button,
+    #sidebar>.account__info>h4 {
+
+        display: none;
+    }
+
+    #sidebar>.account__info {
+
+        border-top: none;
+    }
+
+
+    #content {
+
+        flex-grow: 1;
+        padding-top: 75px;
+        padding-left: 1rem;
+
+    }
+
+    .album__row,
+    .user__suggestions__row,
+    .most__popular__row {
+
+        display: flex;
+    }
+
+    .album__col,
+    .user__suggestions__col,
+    .most__popular__col {
+
+
+    width: calc((100% / 2) - 2rem);
+    padding: .5rem;
+    }
+    
+    .main__menu__item {
+
+        padding: .5rem .8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .album__section__title {
+
+        font-size: var(--fs-300);
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+
+
+    
 }
