@@ -51,8 +51,8 @@ h3 {
 }
 
 img {
-    max-width: 200px;
     display: block;
+    width: 100%;
 }
 
 ul {
@@ -102,7 +102,8 @@ ul a {
     color: var(--clr--subtext);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 1rem;
+    padding-top: 1.5rem;
     padding-left: 1rem;
 }
 
@@ -169,7 +170,7 @@ HEADER
 .sidebar__items {
 
     display: flex;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .sidebar__icons {
@@ -208,7 +209,7 @@ HEADER
 
     text-transform: uppercase;
     color: var(--clr--text);
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 
@@ -244,18 +245,31 @@ HEADER
     overflow: hidden;
 }
 
+.playlist__bottom {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
 .download__info,
 .account__info {
 
     display: flex;
-    gap: .5rem;
+    align-items: center;
+    gap: 1rem;
 }
+
+
 
 .account__info {
 
     border-top: 1px solid var(--clr--subtext);
     padding-top: 1rem;
-    width: 70%;
+    width: 90%;
 }
 
 
@@ -280,10 +294,11 @@ HEADER
 }
 
 
-.album__row {
+.album__row,
+.user__suggestions__row,
+.most__popular__row {
 
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     margin: 2rem 0;
@@ -292,10 +307,14 @@ HEADER
     padding: .5rem 0;
 }
 
+.album__col {
+
+    width: calc((100% / 6) - 2rem);
+}
+
 .album__card {
 
     cursor: pointer;
-    max-width: 200px;
 }
 
 .album__card>h4 {
@@ -310,10 +329,11 @@ HEADER
 
 }
 
-.user__suggestions__col {
+.user__suggestions__col,
+.most__popular__col {
 
-    display: flex;
-    gap: 1.5rem;
+    width: calc(100% / 6);
+
 }
 
 .created__img {
@@ -335,15 +355,6 @@ figcaption {
     padding: .5rem 0;
 
 }
-
-
-.most__popular__col {
-
-    display: flex;
-    gap: 1.5rem;
-    padding: 1rem 0;
-}
-
 
 .most__popular__img {
 
@@ -547,7 +558,7 @@ figcaption {
 
 
 /* 
-***************
+****************
 
     MEDIA       
 
@@ -637,7 +648,8 @@ figcaption {
 
     .album__row {
 
-        justify-content: center;
+        justify-content: space-evenly;
+        margin: 0;
     }
 
 
@@ -653,6 +665,14 @@ figcaption {
         font-size: var(--fs-300);
         font-weight: 700;
         margin-top: 1rem;
+    }
+
+    .user__suggestions__col,
+    .most__popular__col {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
 
