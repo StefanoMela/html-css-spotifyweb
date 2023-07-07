@@ -182,21 +182,6 @@ HEADER
     font-size: 1rem;
 }
 
-.button__icon {
-
-    padding-right: .5rem;
-}
-
-.account__info {
-
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-    padding: .5rem 0;
-    border-top: 1px solid var(--clr--subtext);
-    width: 90%;
-}
-
 /* 
 **********************
     PLAYLIST ITEMS    
@@ -240,6 +225,34 @@ HEADER
     margin: 1rem 0;
 
 }
+
+.download__icon,
+.user__icon {
+
+    width: 1.5rem;
+}
+
+.user__icon {
+
+    background-color: grey;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.download__info,
+.account__info {
+
+    display: flex;
+    gap: .5rem;
+}
+
+.account__info {
+
+    border-top: 1px solid var(--clr--subtext);
+    padding-top: 1rem;
+    width: 70%;
+}
+
 
 /* 
     MAIN MENU
