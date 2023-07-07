@@ -161,10 +161,15 @@ HEADER
     cursor: pointer;
 }
 
-.sidebar__icons {
+.sidebar__items {
 
     display: flex;
-    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebar__icons {
+
+    width:  1.2rem;
 }
 
 .download__button {
@@ -449,7 +454,6 @@ figcaption {
     color: hsl(141, 75%, 51%);
     cursor: pointer;
 }
-
 
 .sidebar__items:hover {
 
