@@ -560,16 +560,17 @@ figcaption {
     #header {
 
         width: calc(100% - 50px);
-        right: 0;
-
+        height: 70px;
+        padding: 1rem 0;
     }
 
     .header__button {
 
-        position: absolute;
-        left: 0;
-        margin-left: 1rem;
-    } 
+        letter-spacing: 0;
+        padding: .5rem 1rem;
+        font-size: .7rem;
+    }
+
 
     #sidebar {
 
@@ -601,14 +602,14 @@ figcaption {
         font-size: 1.5rem;
         margin-top: 1rem;
     }
+
     .sidebar__items>span {
 
         display: none;
     }
 
     #sidebar>.download__info,
-    #sidebar>.account__info
-    {
+    #sidebar>.account__info {
 
         margin: 0;
         padding: 0;
@@ -619,8 +620,7 @@ figcaption {
     }
 
     #sidebar>.download__info>button,
-    #sidebar>.account__info>h4
-     {
+    #sidebar>.account__info>h4 {
 
         display: none;
     }
@@ -629,5 +629,26 @@ figcaption {
 
         border-top: none;
     }
+
+
+    #content {
+
+        flex-grow: 1;
+        padding-top: 75px;
+        padding-left: 1rem;
+
+    }
+
+
+    .main__menu__item {
+
+        padding: .5rem .8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .album
+
+
 
 }
