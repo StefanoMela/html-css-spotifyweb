@@ -174,7 +174,7 @@ HEADER
 
 .sidebar__icons {
 
-    width:  1.2rem;
+    width: 1.2rem;
 }
 
 .download__button {
@@ -555,17 +555,18 @@ figcaption {
 */
 
 
-@media screen and (max-width: 639px){
+@media screen and (max-width: 639px) {
 
     #header {
 
-        max-width: calc(100% - 50px);
-        height: 50px;
+        width: calc(100% - 50px);
+        right: 0;
+
     }
 
     .header__button {
 
-        
+        transform: scale(-50%);
     }
 
 
@@ -576,32 +577,59 @@ figcaption {
 
         width: 50px;
         display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     #sidebar>* {
         display: none;
+        margin: 0;
+        padding: 0;
     }
 
 
     #sidebar>.sidebar__logo__small {
 
         display: block;
-        max-width: 1rem;
+        max-width: 1.5rem;
         margin-top: 1rem;
         text-align: center;
-
     }
 
     #sidebar>.sidebar__items {
 
         display: block;
-        margin-top: 1rem;       
-        }
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .sidebar__items>span {
 
-        .sidebar__items>span {
+        display: none;
+    }
 
-            display: none;
-        }
+    #sidebar>.download__info,
+    #sidebar>.account__info
+    {
 
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+
+    #sidebar>.download__info>button,
+    #sidebar>.account__info>h4
+     {
+
+        display: none;
+    }
+
+    #sidebar>.account__info {
+
+        border-top: none;
+    } */
 
 }
