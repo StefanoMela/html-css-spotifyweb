@@ -566,12 +566,10 @@ figcaption {
 
     .header__button {
 
-        transform: scale(-50%);
-    }
-
-
-
-
+        position: absolute;
+        left: 0;
+        margin-left: 1rem;
+    } 
 
     #sidebar {
 
@@ -630,6 +628,6 @@ figcaption {
     #sidebar>.account__info {
 
         border-top: none;
-    } */
+    }
 
 }
