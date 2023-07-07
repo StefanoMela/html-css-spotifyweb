@@ -13,7 +13,7 @@
     --clr--icons: hsl(0, 0%, 82%);
     --clr--accent: hsl(141, 75%, 51%);
 
-    --ff--base: 'Merriweather', serif;
+    --ff--base: 'Montserrat', sans-serif;
 
     --fs-200: clamp(0.94rem, calc(0.90rem + 0.16vw), 1.03rem);
     --fs-300: clamp(1.13rem, calc(1.03rem + 0.44vw), 1.38rem);
@@ -273,6 +273,11 @@ HEADER
 
     cursor: pointer;
     max-width: 200px;
+}
+
+.album__card>h4 {
+
+    margin-top: 1rem;
 }
 
 .suggestion__subtitle {
