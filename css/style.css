@@ -207,6 +207,7 @@ HEADER
     gap: .5rem;
     color: var(--clr--subtext);
     cursor: pointer;
+    overflow: auto;
 }
 
 .playlist__title {
@@ -233,6 +234,7 @@ HEADER
 .playlist__name>* {
 
     margin: 1rem 0;
+
 }
 
 /* 
