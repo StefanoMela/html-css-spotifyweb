@@ -161,6 +161,11 @@ HEADER
     cursor: pointer;
 }
 
+.sidebar__logo__small {
+
+    display: none;
+}
+
 .sidebar__items {
 
     display: flex;
@@ -537,4 +542,66 @@ figcaption {
     border-radius: 10px;
 
     display: block;
+}
+
+
+
+/* 
+***************
+
+    MEDIA       
+
+****************
+*/
+
+
+@media screen and (max-width: 639px){
+
+    #header {
+
+        max-width: calc(100% - 50px);
+        height: 50px;
+    }
+
+    .header__button {
+
+        
+    }
+
+
+
+
+
+    #sidebar {
+
+        width: 50px;
+        display: block;
+    }
+
+    #sidebar>* {
+        display: none;
+    }
+
+
+    #sidebar>.sidebar__logo__small {
+
+        display: block;
+        max-width: 1rem;
+        margin-top: 1rem;
+        text-align: center;
+
+    }
+
+    #sidebar>.sidebar__items {
+
+        display: block;
+        margin-top: 1rem;       
+        }
+
+        .sidebar__items>span {
+
+            display: none;
+        }
+
+
 }
