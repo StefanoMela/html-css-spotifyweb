@@ -570,7 +570,9 @@ figcaption {
 @media screen and (max-width: 380px) {
 
 
-    h2,h3,h4 {
+    h2,
+    h3,
+    h4 {
 
         padding: .1rem;
     }
@@ -658,10 +660,10 @@ figcaption {
     .most__popular__col {
 
 
-    width: calc(100% / 1);
-    padding: .5rem;
+        width: calc(100% / 1);
+        padding: .5rem;
     }
-    
+
     .main__menu__item {
 
         padding: .5rem .8rem;
@@ -687,11 +689,13 @@ figcaption {
 
 }
 
-@media screen and (max-width: 638px) {
+@media screen and (max-width: 639px) {
 
 
 
-    h2,h3,h4 {
+    h2,
+    h3,
+    h4 {
 
         padding: .3rem;
         margin-left: 1rem;
@@ -807,5 +811,32 @@ figcaption {
     }
 
 
-    
+
+}
+
+
+
+@media screen and (max-width: 878px) {
+
+
+
+    .album__row,
+    .user__suggestions__row,
+    .most__popular__row {
+
+        display: flex;
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .album__col,
+    .user__suggestions__col,
+    .most__popular__col {
+
+        width: calc((100% / 4) - 1rem);
+        gap: 1rem;
+    }
+
+
+
 }
